@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parqueadero</title>
+
+    <link rel="stylesheet" href="../Parqueadero/estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="../Parqueadero/estilos/style.css">
+    <link rel="stylesheet" href="../Parqueadero/estilos/style6.css">
+</head>
+
+<body>
+    <nav class="backgroudThemes">
+        <div class="img-container">
+            <img name="logo" src="../Parqueadero/imagenes/Banner.png" alt="Banner del Parqueadero" width="200px"
+                height="95px">
+        </div>
+    </nav>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Registro</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Consulta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <div class="div_principal div_secundario">
+            <div class="row" style="width: 90%;">
+                <!-- imagen Grande -->
+                <div class="col-sm-5">
+                    <div class="descktop">
+                        <img src="../Parqueadero/imagenes/Banner_principal-8.png" alt="Imagen Carro"
+                            style="width: 860px; height: 460px;">
+                    </div>
+                </div>
+
+                <div class="col" style="width: 20%;">
+                    <div class="div_from">
+                        <!-- Fromulario -->
+                        <form id="formulario" class="div_border"
+                            style="width: 300px; height: 260px; padding-top: 15px;">
+                            <h4>Formulario Parqueadero JavaScript</h4>
+                            <!-- Controles -->
+                            <div class="container" style="padding-bottom: 10px; padding-top: 20px;">
+                                <!-- label -->
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="placa"><strong>
+                                                <h5>Placa:</h5>
+                                            </strong></label>
+                                    </div>
+                                </div>
+
+                                <!-- Caja de texto -->
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="placa" name="placa" placeholder="ABC123" required>
+                                    </div>
+                                </div>
+
+                                <!-- Boton -->
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="submit" class="btn btn-primary"
+                                            style="margin-top: 20px; width: 70%;">
+                                            Registrar Entrada
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="info-panel">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <p><strong>Total recaudado:</strong> $<span id="totalPagar">0</span></p>
+                            </div>
+                            <div class="col">
+                                <p><strong>Veh. activos:</strong> <span id="vehiculosActivos">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="estiloBannerSecundario">
+
+            <!-- Tabla Vehiculos agregados -->
+            <table class="tabla-parqueadero">
+                <thead>
+                    <tr>
+                        <th>Placa</th>
+                        <th>Hora Entrada</th>
+                        <th>Hora Salida</th>
+                        <th>Valor</th>
+                        <th>Estado</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCarrito"></tbody>
+            </table>
+
+            <div class="row" style="position: relative;">
+                <div class="col bannerInferior">
+
+                    <div class="descktop">
+                        <label class="textoBajoBanner">
+                            Porque necesitabas darte cuenta de que nada en la vida se consigue sin esfuerzo.<br>
+                            <a class="textoBajoBanner" href="https://descubriendotuestilo.com/textos-motivadores/"
+                                target="_blank">
+                                https://descubriendotuestilo.com/textos-motivadores/
+                            </a>
+                        </label>
+                    </div>
+
+                    <div class="mobil">
+                        <label class="textoBajoBanner">
+                            Porque necesitabas darte cuenta de que nada en la vida se consigue sin esfuerzo.<br>
+                            <a class="textoBajoBanner" href="https://descubriendotuestilo.com/textos-motivadores/"
+                                target="_blank">
+                                https://descubriendotuestilo.com/textos-motivadores/
+                            </a>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div>
+            <footer class="backgroundColorFooter">
+                <br>
+                <div class="backgroudThemesFooter">
+                    <div class="descktop">
+                        <div
+                            style="justify-content: flex-start; align-items: flex-start; gap: 40px; display: inline-flex;">
+                            <div style="justify-content: center; align-items: center; display: flex;">
+                                <div style="text-align: center;">
+                                    <br>
+                                    <label class="estiloSuperior">
+                                        Facil y simple
+                                    </label>
+                                    <br><br><br>
+                                    <label class="estiloSuperior">
+                                        Navegarás de forma más fácil y <br>
+                                        rápida, encontrando lo que <br>
+                                        necesitas con solo unos
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div style="width: 1px; height: 176px; background-color: #ccc;"></div>
+
+                            <div style="text-align: center;">
+                                <br>
+                                <label class="estiloSuperior">
+                                    Facil y simple
+                                </label>
+                                <br><br><br>
+                                <label class="estiloSuperior">
+                                    Navegarás de forma más fácil y <br>
+                                    rápida, encontrando lo que <br>
+                                    necesitas con solo unos
+                                </label>
+                            </div>
+
+                            <div style="width: 1px; height: 176px; background-color: #ccc;"></div>
+
+                            <div style="text-align: center;">
+                                <br>
+                                <label class="estiloSuperior">
+                                    Facil y simple
+                                </label>
+                                <br><br><br>
+                                <label class="estiloSuperior">
+                                    Navegarás de forma más fácil y <br>
+                                    rápida, encontrando lo que <br>
+                                    necesitas con solo unos
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <script src="estilos/script.js"></script>
+</body>
+
+</html>
